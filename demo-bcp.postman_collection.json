@@ -1,0 +1,102 @@
+{
+	"id": "67d69290-da6e-7bc0-427c-7c33c5ae51d3",
+	"name": "demo-bcp",
+	"description": "",
+	"order": [
+		"60467572-99d3-5279-f0d3-58ed1ee266f6",
+		"fb31810c-3219-9044-244a-b4e7998d0fe3",
+		"680bf4b2-0e1c-4a49-7a62-7b0d8a520a21"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1639427819036,
+	"owner": "18730415",
+	"public": false,
+	"requests": [
+		{
+			"id": "60467572-99d3-5279-f0d3-58ed1ee266f6",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:61561/api-tipo-cambio/consultar",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "67d69290-da6e-7bc0-427c-7c33c5ae51d3",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:61561/api-tipo-cambio/consultar",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1639427832805,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "680bf4b2-0e1c-4a49-7a62-7b0d8a520a21",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:61561/api-tipo-cambio/calcular",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "67d69290-da6e-7bc0-427c-7c33c5ae51d3",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:61561/api-tipo-cambio/calcular",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1639427845012,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\r\n\"monto\":\"100\",\r\n\"monedaOrigen\":\"soles\",\r\n\"monedaDestino\":\"dolares\"\r\n}"
+		},
+		{
+			"id": "fb31810c-3219-9044-244a-b4e7998d0fe3",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:61561/api-tipo-cambio/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "67d69290-da6e-7bc0-427c-7c33c5ae51d3",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:61561/api-tipo-cambio/",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1639427840747,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\r\n\"tipoCambio\":\"2.7\",\r\n\"monedaOrigen\":\"dolares\",\r\n\"monedaDestino\":\"soles\"\r\n}"
+		}
+	]
+}
