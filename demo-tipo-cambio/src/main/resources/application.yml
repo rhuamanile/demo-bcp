@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: demo-bcp
+  # ===============================
+  # = SECURITY CONFIG
+  # ===============================
+  security:
+    user:
+      name: admin
+      password: mila
+      roles: USER

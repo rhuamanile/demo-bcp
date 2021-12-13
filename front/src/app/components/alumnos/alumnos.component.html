@@ -1,0 +1,31 @@
+<div class="card bg-light mb-3">
+    <div class="card-header">{{titulo}}</div>
+    <div class="card-body">
+        <div class="alert alert-info" *ngIf="alumnos?.length==0">
+            No hay registros en el sistema.
+        </div>
+        <table class="table table-hover table-striped" *ngIf="alumnos?.length>0">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>Moneda Origen</th>
+                    <th>Moneda destino</th>
+                    <th>Tipo de cambio</th>
+                    <th>eliminar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let alumno of alumnos">
+                    <td>{{alumno.codigo}}</td>
+                    <td>{{alumno.monedaOrigen}}</td>
+                    <td>{{alumno.monedaDestino}}</td>
+                    <td>{{alumno.tipoCambio}}</td>
+                    <td><button class="btn btn-danger btn-sm" 
+                        (click)="eliminar(alumno)">
+                        eliminar
+                    </button></td>
+                </tr>
+            </tbody>
+        </table>
+       </div>
+  </div>
